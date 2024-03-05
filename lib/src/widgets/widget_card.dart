@@ -344,7 +344,7 @@ class _WidgetCardState extends State<WidgetCard> {
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),
-                              widget.model.content ?? SizedBox()
+                              widget.model.content ?? SizedBox(),
                               widget.model.subtitle!.length == 1
                                   ? Text(
                                       '${widget.model.subtitle!.first}',
