@@ -7,6 +7,7 @@ class CoachModel {
       this.titleTextStyle,
       this.subtitle,
       this.subtitleTextStyle,
+      this.content,
       this.header,
       this.maxWidth,
       this.alignment = Alignment.center,
@@ -18,6 +19,7 @@ class CoachModel {
   TextStyle? titleTextStyle;
   List<dynamic>? subtitle;
   TextStyle? subtitleTextStyle;
+  Widget? content;
   Widget? header;
   double? maxWidth;
   AlignmentGeometry? alignment;
