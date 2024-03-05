@@ -357,7 +357,7 @@ class _WidgetCardState extends State<WidgetCard> {
                                           ),
                                     )
                                   : SizedBox(
-                                      height: 50,
+                                      height: 100,
                                       child: ScrollConfiguration(
                                         behavior: MyBehavior(),
                                         child: PageView.builder(
@@ -370,19 +370,7 @@ class _WidgetCardState extends State<WidgetCard> {
                                             itemCount:
                                                 widget.model.subtitle!.length,
                                             itemBuilder: (context, index) {
-                                              return Text(
-                                                '${widget.model.subtitle![index]}',
-                                                maxLines: 3,
-                                                overflow: TextOverflow.ellipsis,
-                                                style: widget.model
-                                                        .subtitleTextStyle ??
-                                                    TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.grey,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                              );
+                                              return widget.model.subtitle![index]?? SizedBox();
                                             }),
                                       ),
                                     ),
