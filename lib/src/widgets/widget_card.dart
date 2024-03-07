@@ -357,7 +357,7 @@ class _WidgetCardState extends State<WidgetCard> {
                                           ),
                                     )
                                   : SizedBox(
-                                      height: 100,
+                                      height: 150,
                                       child: ScrollConfiguration(
                                         behavior: MyBehavior(),
                                         child: PageView.builder(
